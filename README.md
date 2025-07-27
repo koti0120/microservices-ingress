@@ -16,7 +16,7 @@ In Kubernetes, we create Ingress objects to define routing rules — for example
 The Ingress Controller watches these rules and sets up a reverse proxy (like NGINX, Traefik, or HAProxy) to route the traffic correctly.
 
 🔁 Types of Routing
-Port-Based Routing
+1. Port-Based Routing
 
 123.456.78.99:81 → Home Page
 
@@ -26,7 +26,7 @@ Port-Based Routing
 
 👉 This is harder to manage and not user-friendly.
 
-Path-Based Routing using Ingress
+2. Path-Based Routing using Ingress
 
 example.com/home
 
@@ -36,27 +36,29 @@ example.com/songs
 
 👉 This is cleaner and easier to manage.
 
-📌 Popular Ingress Controllers
-NGINX Ingress Controller
+📌 Types of Ingress Controllers:
 
-AWS ALB Ingress Controller
+ ➤ NGINX Ingress Controller
 
-Traefik
+ ➤ AWS ALB Ingress Controller
 
-HAProxy
+ ➤ Traefik
 
-Istio Gateway
+ ➤ HAProxy
 
-💡 Benefits of Using an Ingress Controller
-Reduces cost by avoiding multiple LoadBalancers
+ ➤ Istio Gateway
 
-Easy to manage routing with path and host rules
+💡 Benefits of Using an Ingress Controller:
 
-Handles SSL/TLS certificates for secure HTTPS
+ ➤ Reduces cost by avoiding multiple LoadBalancers
 
-Centralized access control and traffic management
+ ➤ Easy to manage routing with path and host rules
 
-Supports autoscaling and load balancing
+ ➤ Handles SSL/TLS certificates for secure HTTPS
+
+ ➤ Centralized access control and traffic management
+
+ ➤ Supports autoscaling and load balancing
 
 Makes the cluster setup more efficient and user-friendly
 
